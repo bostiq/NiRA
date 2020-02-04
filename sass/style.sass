@@ -1,0 +1,1015 @@
+/* Theme Name:  index-Niri-Divi_child
+   Theme URI:   https://nat.indexwebmedia.com
+   Version:     1.0
+   Description: A child theme of Divi. This is a custom child theme created for our site Needs Assesment Tool.
+   Author:      Lorenzo Colen
+   Author URI:  https://nat.indexwebmedia.com
+   Template:    Divi
+   - Add any CSS custom code for this child theme below this line -
+/* -   
+/* h1, h2, h3, h4, h5, h6 {
+   font-family: Helvetica, Arial, sans-serif !important; }
+
+/* =================
+   - 
+      EXPERIMENT !!!
+   -
+   =================
+
+.home .n-welcome .et_pb_text_2 p
+  text-shadow: -1px 2px rgba(27, 81, 81, 0.5)
+  font-weight: 400
+  letter-spacing: 1px
+
+/* .page {
+   background: linear-gradient(35deg,rgba(255,255,150,0.5) 20%,rgba(255,255,255,0) 50%) content-box,
+   linear-gradient(150deg,#fff 35%,rgba(158,170,255,0.5) 70%,rgba(255,255,255,0)80%) padding-box,
+   linear-gradient(180deg,rgba(255,255,255,0)30%,rgba(255,144,79,.5) 50%,rgba(255,255,255,0)70%) border-box !important;
+   }
+
+/* ===================
+   -
+   STICKY SIDEBAR
+   -
+   ===================
+
+#still.stick
+  position: absolute
+  right: 0
+
+/*   END EXPERIMENT
+  =================
+
+/*============================
+  .
+    UL lists and LI markers
+  .
+  ===========================
+
+.et_builder_inner_content ul
+  padding: 1.6vw 0vw 1.1vw 2vw
+
+  ul
+    padding-left: 2.6vw
+
+  li
+    list-style-type: none
+
+    &:before
+      font-family: Fontawesome
+      content: "\f0da"
+      position: relative
+      left: -0.5vw
+
+  ul li:before
+    font-family: Fontawesome
+    content: "\f105"
+    position: relative
+
+/*========================
+     TOGGLES WITH ARROWS  
+/*========================
+
+.page-id-719
+  .et_pb_toggle_title
+    font-family: 'Titillium Web',Helvetica,Arial,Lucida,sans-serif
+    font-size: 18px
+
+  .et_pb_toggle h5.et_pb_toggle_title::after
+    font-family: Fontawesome
+    content: "\f0da"
+    position: absolute
+    left: -1vw
+    top: 0
+
+  .et_builder_inner_content .et_pb_toggle ul li::before
+    content: "\f105"
+
+@media (max-width: 980px)
+  .page-id-719 .et_pb_toggle h5.et_pb_toggle_title::after
+    left: -3vw
+
+/* EXEPTION FOR "ITEMS OF ASSESSMENT" PAGE
+
+.et_pb_toggle .et_pb_toggle_title::before
+  font-family: Fontawesome !important
+  content: "\f067" !important
+  color: #1C6779 !important
+
+.home .et_pb_toggle .et_pb_toggle_title::before
+  color: #ffffff !important
+
+/*================
+  .
+    TOOLTIPS !!
+  .
+   ===============
+
+.z999
+  z-index: 999 !important
+  position: relative
+
+.et_pb_code sup, .et_pb_text sup
+  font-size: 80%
+
+.tt
+  border-bottom: 2px dotted #7CC5D4
+  position: relative
+  z-index: 9999
+
+.toolt
+  /* flex-direction: column; */
+
+  position: fixed
+  background-color: #B5F5FF
+  width: 50vw
+  padding: 2%
+  font-size: 16px
+  transform: scale(0, 0)
+  transform-origin: top right
+  transition: all 200ms ease-in-out 0s
+  z-index: 9999
+  border: 4px solid #7CC5D4
+  border-radius: 10px
+  right: 5% !important
+  top: 17.5% !important
+  line-height: 1.2em
+
+  br
+    line-height: 2em
+    margin-bottom: 10px
+
+.tt:hover .toolt
+  position: fixed
+  transform: scale(1, 1) !important
+
+@media screen and (max-width: 480px)
+  .toolt
+    position: fixed
+    width: 80vw
+    right: 10vw
+    top: 10vw
+
+.toolt
+  a
+    border-bottom: 2px dotted #339B9E
+
+    /*! background-color: #D8FAFF;
+    line-height: 1.4em
+
+  i
+    display: inline-block
+
+span.ita
+  font-style: italic
+  clear: both
+  position: relative
+  display: inline-block
+
+  /* float: right;
+
+/* =================
+     jBOX TOOLTIPS
+   =================
+  */
+.jBox-container
+  background-color: #CCF0FF
+  border-radius: 10px !important
+
+.jBox-content
+  background-color: #CCF0FF
+  border-radius: 10px !important
+  border: 5px solid #7CC5D4
+
+/* .jBox-container:before , .jBox-content:before {
+   border-color: #227C7E;
+   background: #227C7E;
+   }
+  */
+
+.jBox-pointer::after
+  background: #7CC5D4 !important
+
+/* .jBox-closeButton-box .jBox-closeButton {
+   background: #CCF0FF !important;
+   }
+  */
+.jBox-closeButton path
+  fill: #333 !important
+
+.jBox-content p
+  margin-left: 20px
+
+  i
+    margin-left: -20px
+
+/*   END TOOLTIPS
+/* =======================
+  .
+  ========================
+    MAIN MENU HOVER ANIM
+  ========================
+  */
+#top-menu > li > ul
+  overflow: hidden
+
+  > li
+    &:before
+      content: '\f105'
+      position: absolute
+      font: 1em Fontawesome
+      left: 13px
+      top: 13px
+      color: #2C897D
+      transform: translateX(-50px)
+
+    &:hover:before
+      transform: translateX(0px)
+      transition: all 500ms ease-in-out 0s
+
+/*  END - MAIN MENU HOVER ANIM
+  ==============================
+  .
+  =============
+    BUTTONS!!
+  =============
+  */
+.et_pb_button
+  border: 3px solid transparent !important
+  background: linear-gradient(transparent, transparent) content-box, linear-gradient(#7CC5D4, #7CC5D4) padding-box, linear-gradient(135deg, #51F5F7, #F1F48C) border-box
+  transition: all 500ms ease-in-out !important
+
+  &:hover
+    background: #7CC5D4
+
+/* END BUTTONS!!
+  ================
+  .
+  .
+  ====================
+  .
+     GLOBAL SECTIONS
+  .
+  ====================
+  .
+  .
+  ================
+    SUBSCRIPTION
+  ================
+  */
+#sub .et_parallax_bg
+  transform: scale(0, 0)
+  animation: zoom 1s ease-in-out 2s forwards
+
+@-webkit-keyframes zoom
+  100%
+    transform: scale(1, 1)
+
+@-o-keyframes zoom
+  100%
+    transform: scale(1, 1)
+
+@-moz-keyframes zoom
+  100%
+    transform: scale(1, 1)
+
+@keyframes zoom
+  100%
+    transform: scale(1, 1)
+
+/*   END GLOBAL SECTIONS
+  ========================
+  .
+  ===============
+  .
+    NAVIGATION
+  .
+   ============== */
+
+#et-top-navigation
+  float: right !important
+  padding-right: 1vw !important
+
+/* LOGO Header
+
+#main-header .logo_container a::after
+  content: "NiRA"
+  position: relative
+  width: 250px
+  height: 100px
+  margin-left: 10px
+  top: 10px
+  color: #1C5661
+  font-size: 40px
+  font-family: Arial
+  font-weight: 100
+
+/* =======================
+  .
+     DEVIDERS CORRECTION
+  .
+   ======================= */
+
+.et_pb_top_inside_divider
+  margin-top: 0px
+
+/* ============================
+  .
+     TOGGLES COLOR TRANSITION
+  .
+   ============================ */
+
+.et_pb_accordion_item
+  transition: background-color 200ms ease-in-out
+
+/* ===========================
+  .
+     SKEWD COLUMNS PROTOTYPE
+  .
+   ===========================
+  .
+  .
+  ==========================
+   RIGHT SIDE WELCOME SECTION
+  ==========================
+
+.et_pb_row_0 .et_pb_column_1
+  z-index: 8 !important
+
+.et_pb_column_0.n-welcome
+  background-size: 120% 100%
+  overflow: scroll
+  background-position: top left
+
+/*===========================
+/*   HOME SUBSCRIBE SECTION
+/*===========================
+
+.home .et_pb_gutters3 .et_pb_row .et_pb_column.et_pb_column_1_2
+  &.et_pb_column_3
+    width: 60%
+    padding: 0
+
+  &.et_pb_column_2
+    width: 40%
+    margin-right: 2%
+
+.et_pb_column_3 .x-col-inner
+  width: 100%
+  height: auto
+  padding: 3vw 9vw
+  background-image: linear-gradient(180deg, rgba(39, 119, 120, 0.94) 0%, rgba(17, 63, 63, 0.97) 100%)
+
+.x-text-module
+  padding: 1em 0
+  color: #d4ccff
+  padding-left: 3vw
+  padding-right: 3vw
+
+  &.title h2
+    font-weight: 100
+    font-size: 2.2em
+    color: #fff
+    text-align: center
+
+  &.text-1 p
+    font-size: 1.3em
+    line-height: 1.7em !important
+
+  &.text-2
+    padding-bottom: 3vw
+
+/*   END SKEWD COLUMNS PROTOTYPE
+   ===============================
+  .
+  ================
+  .
+     CONNECTIONS
+  .
+   ===============
+
+connection
+  z-index: -1
+  border: 3px solid
+  border-radius: 7em
+  color: rgb(128, 128, 128)
+  color: rgba(0, 0, 0, 0.5)
+
+  &.odd
+    border-radius: 100%
+
+  &.first
+    color: black
+    border: 5px dotted
+
+inner
+  border: 4px solid
+  border-radius: 16px
+  color: #668
+
+/*  image DIV posistioning
+
+.cycleBox
+  transform: translateX(20%)
+
+img.cycle
+  transform: rotate(-40deg)
+
+/*   ANCHORS
+
+.cycleBox .hook
+  position: absolute
+  height: 5px
+  width: 5px
+  display: block
+  /* border: 1px solid red */
+  
+
+.hook
+  &.c1
+    top: 10%
+    left: 20%
+
+  &.c2
+    top: 8%
+    left: 74%
+
+  &.c3
+    top: 50%
+    left: 98%
+
+  &.c4
+    top: 95%
+    left: 58%
+
+  &.c5
+    top: 85%
+    left: 15%
+
+/* STEPS BLURBS POSITIONING
+
+.infoG
+  .step1, .step2, .step3, .step4, .step5
+    width: 75%
+
+    /* shrinks text boxes */
+    margin: 0 auto
+    /* centers them */
+
+  .step1
+    transform: translate(-190%, -50%)
+
+  .step2
+    transform: translate(-20%, -80%)
+
+  .step4
+    transform: translate(-10%, 80%)
+
+  .step5
+    transform: translate(-195%, 50%)
+
+@media (max-width: 980px)
+  .infoG
+    .step1
+      transform: translate(-165%, -50%)
+
+    .step2
+      transform: translate(-20%, -80%)
+
+    .step3
+      transform: translate(0, 30%)
+
+    .step4
+      transform: translate(-10%, 80%)
+
+    .step5
+      transform: translate(-165%, 50%)
+
+@media (max-width: 720px)
+  .infoG
+    .step1
+      transform: translate(-190%, -50%)
+
+    .step2
+      transform: translate(-20%, -80%)
+
+    .step3
+      transform: translate(20%, 0%)
+
+    .step4
+      transform: translate(-10%, 80%)
+
+    .step5
+      transform: translate(-190%, 50%)
+/*   END CONNECTIONS
+   ===================
+  .
+   ============================
+  .
+     PAGES BUTTONS SECTIONS
+  .
+   ============================
+
+.btns-menu
+  display: flex
+  flex-wrap: wrap
+  .et_pb_column
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    padding: 2.3% 1.3% 5%
+
+/*   END PAGES BUTTONS SECTIONS
+   ==============================
+  .
+   ============================
+  .
+     ITEMS OF ASSESSMENT PAGE
+  .
+   ============================
+
+.page-id-719 .et_pb_section_2.et_pb_section
+  background: linear-gradient(35deg, #ffc, rgba(255, 255, 255, 0)) content-box, linear-gradient(100deg, #faf, rgba(255, 255, 255, 0)) padding-box, linear-gradient(145deg, #aff, rgba(255, 255, 255, 0)) border-box !important
+  padding: 0
+
+/*   END ITEMS OF ASSESSMENT PAGE
+   ================================
+  .
+  ================
+     SECTION TEST
+  ================
+  ./
+    
+/*.quotes:nth-child(3) p
+  border: 3px solid #7cc5d4
+  border-radius: 20px
+  padding: 3vw !important */
+/*
+  .
+/* #main-content .quotes:nth-child(3) .et_pb_column
+  display: flex
+  align-items: center
+  justify-content: center */
+
+/*   END SECTION TEST
+   ====================
+  .
+   =========
+     QUOTES
+   =========
+
+.quotes
+  p
+    &:before, &:after
+      font-family: Fontawesome
+      content: "\f10d"
+
+      /* 		content: open-quote;*/
+      color: hsla(190, 50%, 66%, 0.5)
+      font-size: 2em
+
+    &:before
+      position: absolute
+      left: -1.5vw
+      top: 80px
+      z-index: -9
+
+    &:after
+      content: "\f10e"
+      position: relative
+      right: 0px
+      float: right
+      top: 0px
+      z-index: -9
+
+    padding: 3vw 1vw
+
+  .et_pb_text_inner > ul
+    background-color: hsla(190, 50%, 66%, 0.5)
+    border-left: 7px solid #7cc5d4
+    margin-top: 50px
+
+/*  END QUOTES
+   ============
+  .
+   =======================
+   TEAM LAYOUT - ALTERNATE
+   =======================
+  . */
+.et_pb_blurb_content
+  max-width: 100% !important
+  display: flex
+
+.et_pb_blurb:nth-child(2n) .et_pb_blurb_content
+  flex-direction: row-reverse
+
+/* .et_pb_blurb_content .et_pb_blurb_container
+  padding: 2vw */
+/* .et_pb_blurb_content .et_pb_image_wrap
+  width:  200px !important
+  height: 200px !important
+  overflow: hidden
+  display: inline-block
+  border-radius: 50% */
+/* . */
+/* .et_pb_blurb_content .et_pb_main_blurb_image img 
+  height: 100%
+  transform: scale(2,2) */
+/*. 
+  .
+   END TEAM LAYOUT
+   ================
+  .
+   =======================
+   BLOOM FORM CONTACT PAGE
+   =======================
+  .
+.et_bloom .et_bloom_optin_3 .carrot_edge .et_bloom_form_content::before
+  border: 0px solid rgba(0, 0, 0, 0) !important
+
+.page.et_bloom
+  .et_bloom_optin_3 .et_bloom_form_container .et_bloom_form_header, .et_bloom_form_container
+    background-color: rgba(0, 0, 0, 0) !important
+
+/* =================
+      CUSTOM FORM
+   =================
+  .
+.emaillist form
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-evenly
+  background-color: #333
+  padding: 1vw
+  border-radius: 3px
+  color: #fff
+
+  input
+    &[type=text], &[type=email]
+      padding: 0.5vw
+      border-radius: 3px
+      width: 100%
+      font-size: 18px
+
+  .es-field-wrap
+    width: 29%
+
+  .es_submit_button
+    width: 29%
+    padding: 0 !important
+    height: 44.5px
+    font: 20px "Titillium Web", sans-serif
+    margin-top: 30px
+    border: 0
+    border-radius: 5px
+    background-color: #7cc5d4
+
+/*     END CUSTOM FORM
+   =======================
+  .
+   ======================
+  .
+     SEARCH RESULT PAGE
+  .
+   ======================
+
+.search
+  &.et_right_sidebar
+    #main-content .container
+      margin: 0
+      width: 100%
+      max-width: 100%
+
+    #left-area
+      padding-right: 2vw
+
+    .flex
+      display: grid
+      grid-template: 10% / auto auto auto
+      padding: 0 2vw
+
+  article
+    padding: 2vw
+
+  .pagination
+    padding: 3vw
+
+    a
+      color: #1C6779
+      font-size: 1.5em
+
+/*   END SEARCH RESULT PAGE
+   ==========================
+  .
+  ===================
+  .
+       PAGE 404.
+  .
+  ===================
+  .
+.error404 .et_pb_section_0 .et_pb_row_0
+  background: #fff
+
+/*     END PAGE 404.
+  =======================
+  .
+  ==================================
+  .
+       EMAIL CONFIRMATION GREEN
+  .
+  ==================================
+
+.es_subscription_message
+  &.success, &.error
+    display: block
+    background-color: rgba(240, 240, 150, 1)
+    padding: 2.5vw 5vw 3vw
+    border-radius: 5px
+
+.x-sc-module.sc .es_subscription_message
+  &.success, &.error
+    font-size-adjust: 0.7
+
+/*     END EMAIL CONFIRMATION GREEN
+/*======================================
+  .
+   LEFT SIDE PROCESS SECTION
+   =========================
+  .
+/* .n-process::before {
+ *	content: ' ';
+ *	width: 150px;
+ *	height: 454px;
+ *	display: block;
+ *	position: absolute;
+ *	background-color: #7CC5D4;
+ *	top: 0;
+ *	left: -110px;
+/* border: 1px solid red;
+/* 	z-index: -9 !important;
+ *	transform: skewX(-10deg);
+ *}
+/* .n-process{
+ *	height: 454px;
+ *	max-height: 454px;
+ *}
+/* #main-header {
+ *background-color: #E5E4C9;
+ *padding-top: 20px; }
+/*   
+ *#main-header .container {
+ *  width: 100% !important;
+ *  padding: 0 !important; }
+
+/* #main-header .logo_container {
+ *font-family: "EB Garamond", serif;
+ *font-size: 40px;
+ *display: inline-block; }
+ *#main-header .logo_container span {
+ *  margin-top: 10%; }
+ *  #main-header .logo_container span h1 {
+ *    color: #AE493E;
+ *    font-size: 1.2em; }
+ *    #main-header .logo_container span h1 span {
+ *      padding: 0;
+ *      margin-top: 0;
+ *      letter-spacing: -0.1em; }
+ *  #main-header .logo_container span h1#niraTitle {
+ *    float: left;
+ *    margin-right: 8px;
+ *    text-transform: uppercase; }
+ *    #main-header .logo_container span h1#niraTitle .i {
+ *      color: #32998F; }
+ *    #main-header .logo_container span h1#niraTitle .a {
+ *      margin-left: -4px; }
+ *#main-header .logo_container span, #main-header .logo_container a {
+ *  position: relative;
+ *  float: left; }
+
+#main-header #logo
+  /* width: 180px !important
+   *height: 180px */
+  animation: rotation 120s 0s linear infinite
+  z-index: -999
+
+@-webkit-keyframes rotation
+  0%
+    transform: rotate(0deg)
+
+  100%
+    transform: rotate(360deg)
+
+@-moz-keyframes rotation
+  0%
+    transform: rotate(0deg)
+
+  100%
+    transform: rotate(360deg)
+
+@-o-keyframes rotation
+  0%
+    transform: rotate(0deg)
+
+  100%
+    transform: rotate(360deg)
+
+@keyframes rotation
+  0%
+    transform: rotate(0deg)
+
+  100%
+    transform: rotate(360deg)
+
+/* #main-header.et-fixed-header {
+ *margin-top: 0;
+ *padding-top: 0; }
+
+/* #main-header.et-fixed-header #logo {
+ *width: 60px !important;
+ *height: 60px; }
+
+/* #main-header.et-fixed-header h1#niraTitle {
+ *  font-size: 1em; }
+ *#main-header.et-fixed-header h1#niraTag {
+ *  font-size: 1em;
+ *  margin-left: 6px; }
+
+/* #main-header.et-fixed-header #et-top-navigation {
+ *margin-top: 33px; }
+
+/* #et-top-navigation {
+ *background-color: #77A8B5;
+ *padding-top: 20px;
+ *margin-top: 20px;
+ *height: 54px; }
+
+/* #et-top-navigation ul, #et_search_icon {
+ *display: none; }
+
+/* #main-footer .container {
+ *width: 100%;
+ *max-width: 1280px; }
+
+/* #main-footer #footer-widgets #media_image-2 {
+ *margin-top: 9%; }
+
+/* #main-footer #footer-widgets .footer-widget:nth-child(1n+2) {
+ *width: 28%;
+ *margin-right: 6%; }
+
+/* #main-footer #footer-widgets .footer-widget.last {
+ *margin-right: 0; }
+
+/* #main-footer #footer-widgets .footer-widget:nth-child(1) {
+ *margin-right: -5%; }
+
+.footer-widget:nth-child(3) .fwidget
+  display: flex !important
+  justify-content: center !important
+
+#main-footer #footer-widgets
+  .footer-widget:nth-child(4)
+    /* width: 15% */
+    padding: 10px 0 0px 10px
+    border-left: 0.5px solid #fff
+
+  .niraFoot h4
+    color: #fff
+
+    &.xblue
+      color: #32998F
+
+      span.xblue
+        color: #32998F
+
+  span.xbig
+    font-size: 1.6em
+    color: #fff
+
+  #custom_html-3
+    width: 100%
+
+    div.custom-html-widget:nth-child(2) > div:nth-child(1)
+      width: 87%
+
+/* ====================
+  .
+     MEDIA QUERIES
+  .
+  ====================
+
+@media (max-width: 980px)
+  .home .et_pb_section_0
+    h2
+      line-height: 1.3em
+
+    p
+      line-height: 1.5em
+
+  #pur .et_pb_row
+    display: flex
+    flex-direction: column
+
+    .et_pb_column
+      width: 100%
+
+  .infoG
+    .et_pb_row
+      display: flex
+
+    // .et_pb_row_7 .et_pb_column, .et_pb_row_8 .et_pb_column
+
+    // .et_pb_row_9
+      // .et_pb_column, .et_pb_text
+
+@media (max-width: 720px)
+  .emaillist form
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding: 1vw
+    border-radius: 3px
+    color: #fff
+
+    .es-field-wrap
+      width: 90% !important
+
+  .infoG
+    .et_pb_row, .et_pb_column
+      padding: 2%
+
+    .et_pb_row
+      display: inline-block
+
+    .et_pb_column
+      margin-top: 4%
+
+    .et_pb_column_10, .et_pb_column_11
+      width: 50%
+      transform: translateX(20%)
+
+    // .et_pb_column_10
+
+  #main-content .section_has_divider
+    &.et_pb_top_divider .et_pb_top_inside_divider, &.et_pb_bottom_divider .et_pb_bottom_inside_divider
+      background-size: 100% 50px
+      height: 50px
+
+  .infoG
+    .et_pb_row.et_pb_row_8
+      display: block
+      padding: 0 6vw
+      margin: 0
+      width: 100%
+      max-width: 100%
+
+    .et_pb_column
+      float: left
+      width: 47% !important
+      padding: 0 2vw
+
+  .home .infoG .et_pb_row .cycleBox
+    width: 250px
+    /* border: 1px solid red */
+    transform: translateX(0)
+
+  .infoG
+    .step1, .step2, .step3, .step4, .step5
+      width: 100% !important
+      margin: 0 0 !important
+      margin-top: 0px
+      margin-bottom: 0px
+
+    .step1
+      transform: translate(-130%, -50%)
+
+    .step2
+      transform: translate(0, -80%)
+
+    .step3
+      transform: translate(30%, 0%)
+
+    .step4
+      transform: translate(-10%, 80%)
+
+    .step5
+      transform: translate(-130%, 50%)
+
+    .et_pb_column.et_pb_column_14
+      clear: both
+      width: 100% !important
+      margin: 10vh 0 0 0
+      padding: 0 0
+
+      .et_pb_text_15
+        padding: 0 0
+
+@media (max-width: 480px)
+  /* =======================
+          CONTACT PAGE
+      =======================
+   . */
+  .page-id-30 .et_pb_row_0.et_pb_row
+    width: 100%
+    padding: 5vw 7vw 12vw
