@@ -2,13 +2,14 @@
            [ INDEX LOG-IN MODS ]
 ________________________________________*/
 
-
 body {
-	background-color: #3d3d3d !important;
-	background-image: url('./images/beautiful_seashore-wallpaper-1280x800.jpg') !important;
-	background-size: cover !important;
-	 /*background-blend-mode: overlay;	*/
+    background-color: #3d3d3d !important;
+    background-image: url('https://indexwebmedia.com/wp-content/uploads/2016/04/index_bg-2441-2.jpg') !important;
+    background-size: cover !important;
+    background-blend-mode: overlay;
+    color:
 }
+
 
 /*#login h1 a {
 	visibility: collapse;
@@ -17,175 +18,201 @@ body {
 }*/
 
 #login {
-	padding-top:5%
-}
-#login h1 a, .login h1 a{
-	animation: rotation 120s  0s linear infinite;
-	background-color: #f9f9f966;
-	padding: 10px 10px;
-	background-position: 50%;
-	border-radius: 50%;
+    padding-top: 3%;
+    padding-bottom: 0;
 }
 
-@keyframes rotation {
-	0% {-ms-transform: rotate(0deg)}
-	100% {-ms-transform: rotate(360deg)}
+.login #backtoblog a,
+.login #nav a {
+    color: #82a5ce;
+}
 
-	0% {-webkit-transform: rotate(0deg)}
-	100% {-webkit-transform: rotate(360deg)}
-
-	0% {transform: rotate(0deg)}
-	100% {transform: rotate(360deg)}
-	}
 #login h1 {
-	background-color: rgba(0, 0, 0, 0);
-	padding:0 6px;
-	border-radius: 10px 10px 10px 10px;
--moz-border-radius: 10px 10px 10px 10px;
--webkit-border-radius: 10px 10px 10px 10px;
-border: 0px solid #000000;
-	font-weight: 100;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0 6px;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    font-weight: 100;
 }
-
-
 
 #login h1:after {
-	content: "NiRA";
-	font-family: Garamond, 'Times New Roman', serif;
-	color: rgba(255,255,255,0.7);
-	text-shadow: none;
-	font-size: 34px;
-	line-height: 40px;
-	/*margin-top: 20px;*/
-	
-	
+    content: "The Hub";
+    font-family: 'Open-Sans', ;
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: none;
+    font-size: 34px;
+    line-height: 40px;
+    /*margin-top: 20px;*/
 }
+
+
+/*
+
+
+    ,...
+  .d' ""
+  dM`
+ mMMmm,pW"Wq.`7Mb,od8 `7MMpMMMb.pMMMb.
+  MM 6W'   `Wb MM' "'   MM    MM    MM
+  MM 8M     M8 MM       MM    MM    MM
+  MM YA.   ,A9 MM       MM    MM    MM
+.JMML.`Ybmd9'.JMML.   .JMML  JMML  JMML.
+
+
+
+*/
 
 #login form {
-	margin-top: 20px;
-	margin-left: 0;
-	padding: 26px 24px 46px;
-	background: rgba(0, 0, 0, 0.4);
-	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.13);
-	box-shadow: 0 1px 3px rgba(0,0,0,.13);
-	
-	border-radius: 10px 10px 10px 10px;
--moz-border-radius: 10px 10px 10px 10px;
--webkit-border-radius: 10px 10px 10px 10px;
-border: 0px solid #000000;
-	
-	-webkit-box-shadow: 0px 0px 150px 0px rgba(255,255,255,0.3);
--moz-box-shadow: 0px 0px 150px 0px rgba(255,255,255,0.3);
-box-shadow: 0px 0px 150px 0px rgba(0,0,0,0.4);
-}
-#login form label{
-	color:#bbb
-
+    margin-top: 20px;
+    margin-left: 0;
+    padding: 26px 24px 46px;
+    background: rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .13);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .13);
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    -webkit-box-shadow: 0px 0px 150px 0px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: 0px 0px 150px 0px rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 150px 0px rgba(255, 255, 255, 0.3);
 }
 
-#login form p:nth-child(1),#login form p:nth-child(2) {
-	border-bottom:2px solid #e5e5e536;
+#login form label {
+    color: #bbb
+}
+
+#login form p:nth-child(1) {
+    border-bottom: 2px solid #e5e5e536;
 }
 
 #login form p:nth-child(2) {
-	margin-bottom:30px
+    margin-bottom: 30px
 }
 
-#login form input[type="password"], #login input[type="text"] {
-	background: #0000;
-	color:#eee;
-	border:0px;
-	box-shadow:none;
-	margin-left:7px
-	
+#login form input[type="password"],
+#login input[type="text"] {
+    background: #0000;
+    color: #eee;
+    border: 0px;
+    box-shadow: none;
+    margin-left: 7px
 }
 
-#login form input#user_login.input, #login form input#user_pass.input {
-	width:85%;
+#login form input#user_login.input,
+#login form input#user_pass.input {
+    width: 85%;
 }
 
-#login form p label:nth-of-type(1n+1)::after {
-	font-family:'FontAwesome' !important;
-	content:'\f007';
-	color:#fff9 !important;
-/* 	position: relative !important; */
-	font-size:1.5em;
-	margin-left:10px ;
-	margin-top: 10px;
-	float: left;
+#loginform p:nth-child(1)::after {
+    font-family: 'FontAwesome' !important;
+    content: '\f007' !important;
+    color: #fff9 !important;
+    /* 	position: relative !important; */
+    font-size: 1.5em;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left
+    /* 	position: relative !important; */
 }
-#login form p:nth-child(2n+2) label::after {
-	font-family:'FontAwesome';
-	content:'\f023';
-	color:#fff9 !important;
-	font-size:1.5em;
-	margin-left:10px ;
-	margin-top: 10px;
-	float: left;
+
+#login form p label:nth-of-type(1n+1),
+#login form .user-pass-wrap label {
+    display: none
 }
+
+#loginform .wp-pwd::after {
+    font-family: 'FontAwesome';
+    content: '\f023';
+    color: #fff9 !important;
+    font-size: 1.5em;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+}
+
 #login form p:nth-child(3n+3) label::after {
-	display: none
+    display: none
 }
 
-
-
-#login form input[type="checkbox"]{
-	font-size:2.5em !important;
-	width:26px;
-	height:26px;
-	margin-top:4px
-
+.dashicons-visibility::before {
+    color: #fff9 !important;
 }
-#login form input[type="checkbox"]::before{
-	font-size:1.0em !important;
 
+#login form input[type="checkbox"] {
+    font-size: 2.5em !important;
+    width: 26px;
+    height: 26px;
+    margin-top: 4px
+}
+
+#login form input[type="checkbox"]::before {
+    font-size: 1.0em !important;
 }
 
 #login #login_error {
-	
-	border:1px solid #dd3d36;
-	border-left: 4px solid #dd3d36;
-	background: rgba(50,0,0,0.9);
-	color: rgba(250,0,0,0.7);
-	box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    border: 1px solid #dd3d36;
+    border-left: 4px solid #dd3d36;
+    background: rgba(50, 0, 0, 0.9);
+    color: rgba(250, 0, 0, 0.7);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
 }
 
 #login .message {
-	border:1px solid #00a0d2;
-	border-left: 4px solid #00a0d2;
-	
-	background: rgba(0,0,50,0.7);
-	color: rgba(0,250,250,0.7);
-	box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-
+    border: 1px solid #00a0d2;
+    border-left: 4px solid #00a0d2;
+    background: rgba(0, 0, 50, 0.7);
+    color: rgba(0, 250, 250, 0.7);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
 }
-#login .message,#login #login_error {
-	margin-top: 18px;
+
+#login .message,
+#login #login_error {
+    margin-top: 18px;
 }
 
 #login {
-	text-align: center;
+    text-align: center;
 }
 
+
+/*
+ ,,
+*MM                  mm     mm
+ MM                  MM     MM
+ MM,dMMb.   ,pW"Wq.mmMMmm mmMMmm ,pW"Wq.`7MMpMMMb.pMMMb.
+ MM    `Mb 6W'   `Wb MM     MM  6W'   `Wb MM    MM    MM
+ MM     M8 8M     M8 MM     MM  8M     M8 MM    MM    MM
+ MM.   ,M9 YA.   ,A9 MM     MM  YA.   ,A9 MM    MM    MM
+ P^YbmdP'   `Ybmd9'  `Mbmo  `Mbmo`Ybmd9'.JMML  JMML  JMML.
+
+*/
+
 #login #backtoblog {
-	padding-bottom: 20px
+    padding-bottom: 0px margin-bottom: 0;
 }
-.login #backtoblog a, .login #nav a {
-	text-decoration: none;
-	color: #99c9ff;
+
+#bottom_html {
+    text-align: center;
+}
+
+#bottom_html p.txt {
+    margin: 0 auto;
+    width: 320px;
+    color: #aaa;
 }
 
 #login:after {
-	position: relative;
-	bottom: -80px;
-	content: "© 2016 - inde[x] Web Media Productions";
-	color: rgba(250,250,250,1);
-	margin-top: 20px;
-
+    position: relative;
+    bottom: -80px;
+    content: "© 2016 - inde[x] Web Media Productions";
+    color: rgba(250, 250, 250, 1);
+    margin-top: 20px;
 }
 
 .jetpack-sso-wrap {
-	position: absolute;
-	visibility: collapse;
+    position: absolute;
+    visibility: collapse;
 }
-
