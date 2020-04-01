@@ -1,0 +1,66 @@
+@charset 'utf-8'
+// sass-lint:disable no-css-comments
+// sass-lint:disable border-zero
+// sass-lint:disable class-name-format
+// sass-lint:disable property-sort-order
+// sass-lint:disable no-ids
+// sass-lint:disable force-element-nesting
+// sass-lint:disable force-pseudo-nesting
+
+.cpp_form
+  .pbSubmit
+    background: #5AA0B3
+    color: #fff
+    border-radius: 5px
+    width: 200px
+    text-align: center
+
+  #field_1-0
+    grid-row: 1 / 8
+
+
+#cp_appbooking_pform_1
+  #fbuilder
+    .pbreak.pb0
+      display: grid
+      grid-template-columns: 30% 65%
+      grid-column-gap: 5%
+
+#fbuilder
+  .uh
+    line-height: 1.4em
+
+  .large
+    &[type='text']
+      font-size: 16px
+      padding-left: 1%
+      letter-spacing: .7px
+
+  .ui-datepicker-inline
+    width: 100%
+    max-width: 100% !important
+
+  .slotsCalendarfieldname1_1 .slots,
+  .ui-datepicker
+    border: 0 solid #5AA0B3
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .3)
+    margin-bottom: 20px
+
+  .slotsCalendarfieldname1_1
+    .availableslot
+      border: 0
+
+      a
+        padding: 4% 10%
+        border: 5px solid #5AA0B3
+        background: #CCEFFF
+        border-radius: 5px
+
+@media all and (max-width: 979px)
+  #cp_appbooking_pform_1
+    #fbuilder
+      .pbreak.pb0
+        display: block
+
+
+

@@ -56,6 +56,9 @@ function theme_styles()
 {
   // Load all of the styles that need to appear on all pages
   wp_enqueue_style( 'custom-font', get_stylesheet_directory_uri() . '/font-awesome-4.7.0/css/font-awesome.min.css' );
+  if(is_page('debriefing-covid-19')) {
+		wp_enqueue_style( 'form-styles', get_stylesheet_directory_uri() . '/booking.css' );
+  }
 }
 add_action('wp_enqueue_scripts' , 'theme_styles');
 

@@ -1,0 +1,52 @@
+.cpp_form .pbSubmit {
+  background: #5AA0B3;
+  color: #fff;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+}
+.cpp_form #field_1-0 {
+  grid-row: 1/8;
+}
+
+#cp_appbooking_pform_1 #fbuilder .pbreak.pb0 {
+  display: grid;
+  grid-template-columns: 30% 65%;
+  grid-column-gap: 5%;
+}
+
+#fbuilder .uh {
+  line-height: 1.4em;
+}
+#fbuilder .large[type=text] {
+  font-size: 16px;
+  padding-left: 1%;
+  letter-spacing: 0.7px;
+}
+#fbuilder .ui-datepicker-inline {
+  width: 100%;
+  max-width: 100% !important;
+}
+#fbuilder .slotsCalendarfieldname1_1 .slots,
+#fbuilder .ui-datepicker {
+  border: 0 solid #5AA0B3;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+#fbuilder .slotsCalendarfieldname1_1 .availableslot {
+  border: 0;
+}
+#fbuilder .slotsCalendarfieldname1_1 .availableslot a {
+  padding: 4% 10%;
+  border: 5px solid #5AA0B3;
+  background: #CCEFFF;
+  border-radius: 5px;
+}
+
+@media all and (max-width: 979px) {
+  #cp_appbooking_pform_1 #fbuilder .pbreak.pb0 {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=booking.css.map */
