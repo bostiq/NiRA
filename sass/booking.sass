@@ -15,16 +15,30 @@
     width: 200px
     text-align: center
 
-  #field_1-0
-    grid-row: 1 / 8
+  .pb0.pbreak
+    .fields:first-of-type
+      grid-row: 1 / 8
 
 
-#cp_appbooking_pform_1
+.cpp_form
   #fbuilder
     .pbreak.pb0
       display: grid
-      grid-template-columns: 30% 65%
+      grid-template-columns: 45% 50%
       grid-column-gap: 5%
+
+.x-last
+  .cpp_form #fbuilder
+    .pbreak.pb0
+      grid-template: 10% / 100%
+
+.post-1619,
+.post-1623
+  .cpp_form
+    .pb0.pbreak
+      display: flex !important
+      flex-direction: column
+      flex-wrap: wrap
 
 #fbuilder
   .uh
@@ -40,24 +54,55 @@
     width: 100%
     max-width: 100% !important
 
-  .slotsCalendarfieldname1_1 .slots,
+  .slots,
   .ui-datepicker
-    border: 0 solid #5AA0B3
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .3)
+    border: 0 solid #5AA0B3 !important
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3) !important
     margin-bottom: 20px
 
-  .slotsCalendarfieldname1_1
-    .availableslot
-      border: 0
-
+  .slots
+    div
+      display: inline-block
+      border: 0 !important
+      padding: 0 !important
+      margin-right: 20px !important
       a
-        padding: 4% 10%
-        border: 5px solid #5AA0B3
-        background: #CCEFFF
+        padding: 3% 10% !important
+        border: 0px solid #5AA0B3
+        background-color: #CCEFFF !important
         border-radius: 5px
 
+.ahb_list
+  display: flex
+  flex-direction: column
+  position: relative
+  background-color: #ffa
+  margin: 2%
+  padding: 5%
+  
+  span
+    position: relative
+    display: inline-block
+
+  .cancel
+    display: block 
+    position: relative
+    background-color: #f66
+    margin: 4%
+    padding: 1% 3%
+    color: #fff
+    width: 100px
+    align-self: end
+
+    &:after
+      content:'\f00d'
+      font-family: FontAwesome
+      right: -10px
+      position: relative
+
+
 @media all and (max-width: 979px)
-  #cp_appbooking_pform_1
+  .cpp_form
     #fbuilder
       .pbreak.pb0
         display: block

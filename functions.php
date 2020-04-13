@@ -59,6 +59,12 @@ function theme_styles()
   if(is_page('debriefing-covid-19')) {
 		wp_enqueue_style( 'form-styles', get_stylesheet_directory_uri() . '/booking.css' );
   }
+  if(is_page('help-thanks')) {
+		wp_enqueue_style( 'form-styles', get_stylesheet_directory_uri() . '/booking.css' );
+  }
+  if(is_page('booking-thanks')) {
+		wp_enqueue_style( 'form-styles', get_stylesheet_directory_uri() . '/booking.css' );
+  }
 }
 add_action('wp_enqueue_scripts' , 'theme_styles');
 
