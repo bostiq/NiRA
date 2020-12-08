@@ -1,4 +1,3 @@
-@charset 'utf-8'
 // sass-lint:disable no-css-comments
 // sass-lint:disable border-zero
 // sass-lint:disable class-name-format
@@ -8,54 +7,99 @@
 // sass-lint:disable force-pseudo-nesting
 
 /* Theme Name:  index-Niri-Divi_child
-   Theme URI:   https://nat.indexwebmedia.com
-   Version:     1.0
-   Description: A child theme of Divi. This is a custom child theme created for our site Needs Assesment Tool.
-   Author:      Lorenzo Colen
-   Author URI:  https://nat.indexwebmedia.com
-   Template:    Divi
-   - Add any CSS custom code for this child theme below this line -
+ Theme URI:   https://nat.indexwebmedia.com
+ Version:     1.0
+ Description: A child theme of Divi. This is a custom child theme created for our site Needs Assesment Tool.
+ Author: Lorenzo Colen
+ Author URI:  https://nat.indexwebmedia.com
+ Template:    Divi
+ - Add any CSS custom code for this child theme below this line -
 /* -   
 /* h1, h2, h3, h4, h5, h6 {
-   font-family: Helvetica, Arial, sans-serif !important; }
+ font-family: Helvetica, Arial, sans-serif !important; }
+
+@charset 'utf-8'
 
 @import 'colors'
 
+/* 
+ BASICS
+ */
+
+p
+  a
+    &:link
+      text-decoration: underline dotted 2px $d-teal
+      border: dotted 2px $trans
+      padding: 0 6px
+      transition: all 200ms ease-in-out 0s
+
+    &:hover
+      text-decoration: none dotted 2px $d-teal
+      border: dotted 2px $d-teal
+      border-radius: 10px
+      transition: all 200ms ease-in-out 0s
+
+    &:focus
+      text-decoration: none dotted 2px $d-teal
+      border: solid 2px transparentize($b-azur, .3)
+      border-radius: 10px
+      box-shadow: 0 0 5px transparentize($black, .3) inset, 0 0 7px 0 transparentize($b-azur, .7)
+      transition: all 200ms ease-in-out 0s
+
+#footer-info
+  a
+    &:link
+      text-decoration: none
+      border: none
+
+    &:hover
+      border: none
+      color: #51F5F7
+      opacity: 1 !important
+
+/* a
+ &:hover
+ text-decoration: underline dotted 2px $d-teal !important
+ cursor: pointer
+
+  &:focus
+    text-decoration: underline dotted 2px $d-teal !important
 
 .x-fa
   margin-left: 1vw
 
 /* =================
-   - 
-      EXPERIMENT !!!
-   -
-   =================
+ - 
+ EXPERIMENT !!!
+ -
+ =================
  */
 
 /* .page {
-   background: linear-gradient(35deg, $g1-yellow 20%, $trans 50%) content-box,
-   linear-gradient(150deg,$white 35%, $g1-purple 70%,$trans 80%) padding-box,
-   linear-gradient(180deg,$trans 30%, $g1-orange 50%,$trans 70%) border-box !important;
-   }
+ background: linear-gradient(35deg, $g1-yellow 20%, $trans 50%) content-box,
+ linear-gradient(150deg,$white 35%, $g1-purple 70%,$trans 80%) padding-box,
+ linear-gradient(180deg,$trans 30%, $g1-orange 50%,$trans 70%) border-box !important;
+ }
 
 /* ===================
-   -
-   STICKY SIDEBAR
-   -
-   ===================
+ -
+ STICKY SIDEBAR
+ -
+ ===================
 
 #still.stick
   position: absolute
   right: 0
 
 /*   END EXPERIMENT
-  =================
+ =================
 
 /*============================
-  .
-    UL lists and LI markers
-  .
-  ===========================
+ .
+ UL lists and LI markers
+ .
+ ===========================
 
 .et_pb_section ul
   padding: 1.6vw 0 1.1vw 2vw
@@ -78,7 +122,7 @@
     position: relative
 
 /*========================
-     TOGGLES WITH ARROWS  
+ TOGGLES WITH ARROWS  
 /*========================
 
 .page-id-719
@@ -111,10 +155,10 @@
   color: $white !important
 
 /*================
-  .
-    TOOLTIPS !!
-  .
-   ===============
+ .
+ TOOLTIPS !!
+ .
+ ===============
 
 .z999
   z-index: 999 !important
@@ -165,15 +209,14 @@
     right: 10vw
     top: 10vw
 
-
 /* .toolt
-      a
-        border-bottom: 2px dotted $l-teal
+ a
+ border-bottom: 2px dotted $l-teal
 
 /* background-color: $ice;
-    line-height: 1.4em
-  i
-    display: inline-block
+ line-height: 1.4em
+ i
+ display: inline-block
 
 .ita
   font-style: italic
@@ -184,9 +227,9 @@
   /* float: right;
 
 /* =================
-     jBOX TOOLTIPS
-   =================
-  */
+ jBOX TOOLTIPS
+ =================
+ */
 .jBox-container
   background-color: $d-ice
   border-radius: 10px !important
@@ -197,18 +240,18 @@
   border: 5px solid $l-blue
 
 /* .jBox-container:before , .jBox-content:before {
-   border-color: $m-teal;
-   background: $m-teal;
-   }
-  */
+ border-color: $m-teal;
+ background: $m-teal;
+ }
+ */
 
 .jBox-pointer::after
   background: $l-blue !important
 
 /* .jBox-closeButton-box .jBox-closeButton {
-   background: $d-ice !important;
-   }
-  */
+ background: $d-ice !important;
+ }
+ */
 .jBox-closeButton path
   fill: $d-grey !important
 
@@ -220,11 +263,11 @@
 
 /*   END TOOLTIPS
 /* =======================
-  .
-  ========================
-    MAIN MENU HOVER ANIM
-  ========================
-  */
+ .
+ ========================
+ MAIN MENU HOVER ANIM
+ ========================
+ */
 #top-menu > li > ul
   overflow: hidden
 
@@ -243,35 +286,51 @@
       transition: all 500ms ease-in-out 0s
 
 /*  END - MAIN MENU HOVER ANIM
-  ==============================
-  .
-  =============
-    BUTTONS!!
-  =============
-  */
+ ==============================
+ .
+ =============
+ BUTTONS!!
+ =============
+ */
+
 .et_pb_button
   border: 3px solid transparent !important
-  background: linear-gradient(transparent, transparent) content-box, linear-gradient($l-blue, $l-blue) padding-box, linear-gradient(135deg, $b-azur, $b-yellow) border-box
   transition: all 500ms ease-in-out !important
+  background-color: $b-azur
+  color: #1C5661 !important
+  background: linear-gradient(transparent, transparent) content-box,linear-gradient($b-azur, $b-azur) padding-box,linear-gradient(135deg, $b-azur, $b-azur) border-box
+
+  &:hover
+    background-color: $b-azur
+    background: linear-gradient(transparent, transparent) content-box,linear-gradient($b-azur, $b-azur) padding-box,linear-gradient(135deg, $b-azur, $b-yellow) border-box
+    border: 3px solid transparent !important
+    transition: all 500ms ease-in-out !important
+    border-radius: 5px !important
+
+/* .et_pb_button
+ border: 3px solid transparent !important
+ background: linear-gradient(transparent, transparent) content-box, linear-gradient( $btn-up, $btn-down) padding-box, linear-gradient(135deg, $b-azur, $b-yellow) border-box
+ transition: all 500ms ease-in-out !important
 
   &:hover
     background: $l-blue
+    background: linear-gradient(transparent, transparent) content-box, linear-gradient( $btn-up, $btn-down) padding-box, linear-gradient(135deg, $b-azur, $b-yellow) border-box
 
 /* END BUTTONS!!
-  ================
-  .
-  .
-  ====================
-  .
-     GLOBAL SECTIONS
-  .
-  ====================
-  .
-  .
-  ================
-    SUBSCRIPTION
-  ================
-  */
+ ================
+ .
+ .
+ ====================
+ .
+ GLOBAL SECTIONS
+ .
+ ====================
+ .
+ .
+ ================
+ SUBSCRIPTION
+ ================
+ */
 #sub .et_parallax_bg
   transform: scale(0, 0)
   animation: zoom 1s ease-in-out 2s forwards
@@ -281,13 +340,18 @@
     transform: scale(1, 1)
 
 /*   END GLOBAL SECTIONS
-  ========================
-  .
-  ===============
-  .
-    NAVIGATION
-  .
-   ============== */
+ ========================
+ .
+ ===============
+ .
+ NAVIGATION
+ .
+ ============== */
+
+/** #et-top-navigation
+ float: left
+ padding-left: 20vw !important
+ **/
 
 #et-top-navigation
   float: right !important
@@ -308,33 +372,33 @@
   font-weight: 100
 
 /* =======================
-  .
-     DEVIDERS CORRECTION
-  .
-   ======================= */
+ .
+ DEVIDERS CORRECTION
+ .
+ ======================= */
 
 .et_pb_top_inside_divider
   margin-top: 0
 
 /* ============================
-  .
-     TOGGLES COLOR TRANSITION
-  .
-   ============================ */
+ .
+ TOGGLES COLOR TRANSITION
+ .
+ ============================ */
 
 .et_pb_accordion_item
   transition: background-color 200ms ease-in-out
 
 /* ===========================
-  .
-     SKEWD COLUMNS PROTOTYPE
-  .
-   ===========================
-  .
-  .
-  ==========================
-   RIGHT SIDE WELCOME SECTION
-  ==========================
+ .
+ SKEWD COLUMNS PROTOTYPE
+ .
+ ===========================
+ .
+ .
+ ==========================
+ RIGHT SIDE WELCOME SECTION
+ ==========================
 
 .et_pb_row_0 .et_pb_column_1
   z-index: 8 !important
@@ -384,50 +448,50 @@
     padding-bottom: 3vw
 
 /*   END SKEWD COLUMNS PROTOTYPE
-   ===============================
-  .
-  ================
-  .
-     CONNECTIONS
-  .
-   ===============
+ ===============================
+ .
+ ================
+ .
+ CONNECTIONS
+ .
+ ===============
+ */
 
 connection
-  z-index: -1
-  border: 3px solid
-  border-radius: 7em
-  color: $m-grey
-  color: $m-50-black
+    z-index: -1
+    border: 3px solid
+    border-radius: 7em
+    color: $m-grey
+    color: $m-50-black
 
-  &.odd
-    border-radius: 100%
+    &.odd
+      border-radius: 100%
 
-  &.first
-    color: $black
-    border: 5px dotted
+    &.first
+      color: $black
+      border: 5px dotted
 
 inner
-  border: 4px solid
-  border-radius: 16px
-  color: $smoke-purple
+      border: 4px solid
+      border-radius: 16px
+      color: $smoke-purple
 
 /*  image DIV posistioning
 
 .cycleBox
   transform: translateX(20%)
 
-.cycle
-  transform: rotate(-40deg)
-
-/*   ANCHORS
-
-.cycleBox
   .hook
     position: absolute
     height: 5px
     width: 5px
     display: block
   /* border: 1px solid red */
+
+.cycle
+  transform: rotate(-40deg)
+
+/*   ANCHORS
 
 .hook
   &.c1
@@ -510,13 +574,13 @@ inner
     .step5
       transform: translate(-190%, 50%)
 /*   END CONNECTIONS
-   ===================
-  .
-   ============================
-  .
-     PAGES BUTTONS SECTIONS
-  .
-   ============================
+ ===================
+ .
+ ============================
+ .
+ PAGES BUTTONS SECTIONS
+ .
+ ============================
 
 .btns-menu
   display: flex
@@ -529,43 +593,43 @@ inner
     padding: 2.3% 1.3% 5%
 
 /*   END PAGES BUTTONS SECTIONS
-   ==============================
-  .
-   ============================
-  .
-     ITEMS OF ASSESSMENT PAGE
-  .
-   ============================
+ ==============================
+ .
+ ============================
+ .
+ ITEMS OF ASSESSMENT PAGE
+ .
+ ============================
 
 .page-id-719 .et_pb_section_2.et_pb_section
   background: linear-gradient(35deg, $g-yellow, $trans) content-box, linear-gradient(100deg, $g-pink, $trans) padding-box, linear-gradient(145deg, $g-sky, $trans) border-box !important
   padding: 0
 
 /*   END ITEMS OF ASSESSMENT PAGE
-   ================================
-  .
-  ================
-     SECTION TEST
-  ================
-  ./
-    
+ ================================
+ .
+ ================
+ SECTION TEST
+ ================
+ ./
+ 
 /*.quotes:nth-child(3) p
-  border: 3px solid $l-blue
-  border-radius: 20px
-  padding: 3vw !important */
+ border: 3px solid $l-blue
+ border-radius: 20px
+ padding: 3vw !important */
 /*
-  .
+ .
 /* #main-content .quotes:nth-child(3) .et_pb_column
-  display: flex
-  align-items: center
-  justify-content: center */
+ display: flex
+ align-items: center
+ justify-content: center */
 
 /*   END SECTION TEST
-   ====================
-  .
-   =========
-     QUOTES
-   =========
+ ====================
+ .
+ =========
+ QUOTES
+ =========
 
 .quotes
   p
@@ -576,7 +640,7 @@ inner
       font-family: Fontawesome
       content: '\f10d'
 
-      /* 		content: open-quote;*/
+      /*     content: open-quote;*/
       color: $quotes
       font-size: 2em
 
@@ -600,41 +664,14 @@ inner
     margin-top: 50px
 
 /*  END QUOTES
-   ============
-  .
-   =======================
-   TEAM LAYOUT - ALTERNATE
-   =======================
-  . */
-.et_pb_blurb_content
-  max-width: 100% !important
-  display: flex
+ ============
+ */
 
-.et_pb_blurb:nth-child(2n)
-  .et_pb_blurb_content
-    flex-direction: row-reverse
-
-/* .et_pb_blurb_content .et_pb_blurb_container
-  padding: 2vw */
-/* .et_pb_blurb_content .et_pb_image_wrap
-  width:  200px !important
-  height: 200px !important
-  overflow: hidden
-  display: inline-block
-  border-radius: 50% */
-/* . */
-/* .et_pb_blurb_content .et_pb_main_blurb_image img 
-  height: 100%
-  transform: scale(2,2) */
-/*. 
-  .
-   END TEAM LAYOUT
-   ================
-  .
-   =======================
-   BLOOM FORM CONTACT PAGE
-   =======================
-  .
+/*.
+ =======================
+ BLOOM FORM CONTACT PAGE
+ =======================
+ .
 .et_bloom
   .et_bloom_optin_3
     .carrot_edge .et_bloom_form_content::before
@@ -647,9 +684,9 @@ inner
       background-color: $trans !important
 
 /* =================
-      CUSTOM FORM
-   =================
-  .
+ CUSTOM FORM
+ =================
+ .
 .emaillist form
   display: flex
   flex-wrap: wrap
@@ -681,13 +718,13 @@ inner
     background-color: $l-blue
 
 /*     END CUSTOM FORM
-   =======================
-  .
-   ======================
-  .
-     SEARCH RESULT PAGE
-  .
-   ======================
+ =======================
+ .
+ ======================
+ .
+ SEARCH RESULT PAGE
+ .
+ ======================
 
 .search
   &.et_right_sidebar
@@ -715,27 +752,27 @@ inner
       font-size: 1.5em
 
 /*   END SEARCH RESULT PAGE
-   ==========================
-  .
-  ===================
-  .
-       PAGE 404.
-  .
-  ===================
-  .
+ ==========================
+ .
+ ===================
+ .
+ PAGE 404.
+ .
+ ===================
+ .
 .error404
   .et_pb_section_0
     .et_pb_row_0
       background: $white
 
 /*     END PAGE 404.
-  =======================
-  .
-  ==================================
-  .
-       EMAIL CONFIRMATION GREEN
-  .
-  ==================================
+ =======================
+ .
+ ==================================
+ .
+ EMAIL CONFIRMATION GREEN
+ .
+ ==================================
 
 .es_subscription_message
   &.success,
@@ -754,8 +791,8 @@ inner
 /*======================================
 
 /*
-   LEFT SIDE PROCESS SECTION
-   =========================
+ LEFT SIDE PROCESS SECTION
+ =========================
 
 #main-header
   #logo
@@ -770,7 +807,6 @@ inner
 
   100%
     transform: rotate(360deg)
-
 
 /* #main-header.et-fixed-header {
  *margin-top: 0;
@@ -815,6 +851,15 @@ inner
 /* #main-footer #footer-widgets .footer-widget:nth-child(1) {
  *margin-right: -5%; }
 
+#footer-widgets
+  display: flex
+  align-items: center
+  padding-bottom: 10% !important
+  flex-wrap: wrap
+
+  .footer-widget
+    margin: 0
+
 .footer-widget:nth-child(3) .fwidget
   display: flex !important
   justify-content: center !important
@@ -845,10 +890,10 @@ inner
       width: 87%
 
 /* ====================
-  .
-     MEDIA QUERIES
-  .
-  ====================
+ .
+ MEDIA QUERIES
+ .
+ ====================
 
 @media (max-width: 980px)
   .home
@@ -874,7 +919,7 @@ inner
     // .et_pb_row_7 .et_pb_column, .et_pb_row_8 .et_pb_column
 
     // .et_pb_row_9
-      // .et_pb_column, .et_pb_text
+    // .et_pb_column, .et_pb_text
 
 @media (max-width: 720px)
   .emaillist form
@@ -969,12 +1014,11 @@ inner
 
 @media (max-width: 480px)
   /* =======================
-          CONTACT PAGE
-      =======================
+   CONTACT PAGE
+   =======================
    . */
   .page-id-30
     .et_pb_row_0.et_pb_row
       width: 100%
       padding: 5vw 7vw 12vw
 
-@import 'covid'

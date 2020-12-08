@@ -52,21 +52,15 @@ add_action( 'login_enqueue_scripts', 'my_login_stylesheet' );
 
 // Load the custom stylesheets & conditional scripts
 
-function theme_styles()  
-{
-  // Load all of the styles that need to appear on all pages
-  wp_enqueue_style( 'custom-font', get_stylesheet_directory_uri() . '/font-awesome-4.7.0/css/font-awesome.min.css' );
-  if(is_page('debriefing-covid-19')) {
-		wp_enqueue_style( 'form-styles', get_stylesheet_directory_uri() . '/booking.css' );
-  }
-  if(is_page('help-thanks')) {
-		wp_enqueue_style( 'form-styles', get_stylesheet_directory_uri() . '/booking.css' );
-  }
-  if(is_page('booking-thanks')) {
-		wp_enqueue_style( 'form-styles', get_stylesheet_directory_uri() . '/booking.css' );
-  }
-}
-add_action('wp_enqueue_scripts' , 'theme_styles');
+// function theme_styles()  
+// {
+//   // Load all of the styles that need to appear on all pages
+//   wp_enqueue_style( 'custom-font', get_stylesheet_directory_uri() . '/font-awesome-4.7.0/css/font-awesome.min.css' );
+//   if(is_page('debriefing-covid-19') or is_page('support-services') or is_page('booking-thanks') or is_page('test-form')) {
+// 		wp_enqueue_style( 'form-styles', get_stylesheet_directory_uri() . '/booking.css' );
+//   }
+// }
+// add_action('wp_enqueue_scripts' , 'theme_styles');
 
 function scripts()  
 {
