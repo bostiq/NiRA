@@ -38,7 +38,7 @@ p a:focus {
 }
 #footer-info a:hover {
   border: none;
-  color: #51F5F7;
+  color: #51f5f7;
   opacity: 1 !important;
 }
 
@@ -280,19 +280,8 @@ p a:focus {
  * BUTTONS!!
  * =============
  * */
-.et_pb_button {
-  border: 3px solid transparent !important;
-  transition: all 500ms ease-in-out !important;
-  background-color: #51f5f7;
-  color: #1C5661 !important;
-  background: linear-gradient(transparent, transparent) content-box, linear-gradient(#51f5f7, #51f5f7) padding-box, linear-gradient(135deg, #51f5f7, #51f5f7) border-box;
-}
 .et_pb_button:hover {
-  background-color: #51f5f7;
-  background: linear-gradient(transparent, transparent) content-box, linear-gradient(#51f5f7, #51f5f7) padding-box, linear-gradient(135deg, #51f5f7, #f1f48c) border-box;
-  border: 3px solid transparent !important;
-  transition: all 500ms ease-in-out !important;
-  border-radius: 5px !important;
+  box-shadow: 0 0 10px 0 #fff;
 }
 
 /* .et_pb_button
@@ -302,7 +291,7 @@ p a:focus {
  *
  * &:hover
  *  background: $l-blue
- *  background: linear-gradient(transparent, transparent) content-box, linear-gradient( $btn-up, $btn-down) padding-box, linear-gradient(135deg, $b-azur, $b-yellow) border-box */
+ *  background: linear-gradient(transparent, transparent) content-box, linear-gradient($btn-up, $btn-down) padding-box, linear-gradient(135deg, $b-azur, $b-yellow) border-box */
 /* END BUTTONS!!
  * ================
  * .

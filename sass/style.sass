@@ -55,7 +55,7 @@ p
 
     &:hover
       border: none
-      color: #51F5F7
+      color: $b-azur
       opacity: 1 !important
 
 /* a
@@ -294,18 +294,12 @@ p
  */
 
 .et_pb_button
-  border: 3px solid transparent !important
-  transition: all 500ms ease-in-out !important
-  background-color: $b-azur
-  color: #1C5661 !important
-  background: linear-gradient(transparent, transparent) content-box,linear-gradient($b-azur, $b-azur) padding-box,linear-gradient(135deg, $b-azur, $b-azur) border-box
-
   &:hover
-    background-color: $b-azur
-    background: linear-gradient(transparent, transparent) content-box,linear-gradient($b-azur, $b-azur) padding-box,linear-gradient(135deg, $b-azur, $b-yellow) border-box
-    border: 3px solid transparent !important
-    transition: all 500ms ease-in-out !important
-    border-radius: 5px !important
+    // background-color: $b-azur
+    // background: linear-gradient(transparent, transparent) content-box,linear-gradient($b-azur, $b-azur) padding-box,linear-gradient(135deg, $b-azur, $b-yellow) border-box
+    // border: 3px solid transparent !important
+    // transition: all 500ms ease-in-out !important
+    box-shadow: 0 0 10px 0 $white
 
 /* .et_pb_button
  border: 3px solid transparent !important
@@ -314,7 +308,7 @@ p
 
   &:hover
     background: $l-blue
-    background: linear-gradient(transparent, transparent) content-box, linear-gradient( $btn-up, $btn-down) padding-box, linear-gradient(135deg, $b-azur, $b-yellow) border-box
+    background: linear-gradient(transparent, transparent) content-box, linear-gradient($btn-up, $btn-down) padding-box, linear-gradient(135deg, $b-azur, $b-yellow) border-box
 
 /* END BUTTONS!!
  ================
@@ -1021,4 +1015,3 @@ inner
     .et_pb_row_0.et_pb_row
       width: 100%
       padding: 5vw 7vw 12vw
-
