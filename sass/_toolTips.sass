@@ -1,0 +1,127 @@
+// sass-lint:disable no-css-comments
+// sass-lint:disable border-zero
+// sass-lint:disable class-name-format
+// sass-lint:disable no-ids
+// // sass-lint:disable force-element-nesting
+// sass-lint:disable nesting-depth
+
+// sass-lint:disable no-css-comments
+// sass-lint:disable border-zero
+// sass-lint:disable class-name-format
+// sass-lint:disable no-ids
+// // sass-lint:disable force-element-nesting
+// sass-lint:disable nesting-depth
+
+/*================
+ .
+ TOOLTIPS !!
+ .
+ ===============
+
+.z999
+  position: relative
+  z-index: 999 !important
+
+.et_pb_code,
+.et_pb_text
+  sup
+    font-size: 80%
+
+.tt
+  border-bottom: 2px dotted $l-blue
+  position: relative
+  z-index: 9999
+
+  &:hover
+    .toolt
+      position: fixed
+      transform: scale(1, 1) !important
+
+.toolt
+  /* flex-direction: column; */
+
+  background-color: $l-sky
+  border: 4px solid $l-blue
+  border-radius: 10px
+  font-size: 16px
+  line-height: 1.2em
+  padding: 2%
+  position: fixed
+  right: 5% !important
+  top: 17.5% !important
+  transform: scale(0, 0)
+  transform-origin: top right
+  transition: all 200ms ease-in-out 0s
+  width: 50vw
+  z-index: 9999
+
+  br
+    line-height: 2em
+    margin-bottom: 10px
+
+  a
+    border-bottom: 2px dotted $l-teal
+
+@media screen and (max-width: 480px)
+  .toolt
+    position: fixed
+    right: 10vw
+    top: 10vw
+    width: 80vw
+
+/* .toolt
+ a
+ border-bottom: 2px dotted $l-teal
+
+/* background-color: $ice;
+ line-height: 1.4em
+ i
+ display: inline-block
+
+.ita
+  clear: both
+  display: inline-block
+  font-style: italic
+  position: relative
+
+  /* float: right;
+
+/* =================
+ jBOX TOOLTIPS
+ =================
+ */
+.jBox-container
+  background-color: $d-ice
+  border-radius: 10px !important
+
+.jBox-content
+  background-color: $d-ice
+  border: 5px solid $l-blue
+  border-radius: 10px !important
+
+  p
+    margin-left: 20px
+
+  i
+    margin-left: -20px
+
+/* .jBox-container:before , .jBox-content:before {
+ border-color: $m-teal;
+ background: $m-teal;
+ }
+ */
+
+.jBox-pointer
+  &::after
+    background: $l-blue !important
+
+/* .jBox-closeButton-box .jBox-closeButton {
+ background: $d-ice !important;
+ }
+ */
+.jBox-closeButton
+  path
+    fill: $d-grey !important
+
+
+/*   END TOOLTIPS

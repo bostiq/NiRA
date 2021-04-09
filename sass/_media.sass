@@ -1,0 +1,156 @@
+// sass-lint:disable no-css-comments
+// sass-lint:disable border-zero
+// sass-lint:disable class-name-format
+// sass-lint:disable no-ids
+// // sass-lint:disable force-element-nesting
+// sass-lint:disable nesting-depth
+
+/* ====================
+ .
+ MEDIA QUERIES
+ .
+ ====================
+
+@media (max-width: 980px)
+  .home
+    .et_pb_section_0
+      h2
+        line-height: 1.3em
+
+      p
+        line-height: 1.5em
+
+  #pur
+    .et_pb_row
+      display: flex
+      flex-direction: column
+
+    .et_pb_column
+      width: 100%
+
+  .infoG
+    .et_pb_row
+      display: flex
+
+    // .et_pb_row_7 .et_pb_column, .et_pb_row_8 .et_pb_column
+
+    // .et_pb_row_9
+    // .et_pb_column, .et_pb_text
+
+@media (max-width: 720px)
+  .emaillist
+    form
+      align-items: center
+      border-radius: 3px
+      color: $white
+      display: flex
+      flex-direction: column
+      justify-content: center
+      padding: 1vw
+
+    .es-field-wrap
+      width: 90% !important
+
+  .infoG
+    .et_pb_row,
+    .et_pb_column
+      padding: 2%
+
+    .et_pb_row
+      display: inline-block
+
+    .et_pb_column
+      margin-top: 4%
+
+    .et_pb_column_10,
+    .et_pb_column_11
+      transform: translateX(20%)
+      width: 50%
+
+    // .et_pb_column_10
+
+  #main-content
+    .section_has_divider
+      &.et_pb_top_divider .et_pb_top_inside_divider,
+      &.et_pb_bottom_divider .et_pb_bottom_inside_divider
+        background-size: 100% 50px
+        height: 50px
+
+  .infoG
+    .et_pb_row
+      &.et_pb_row_8
+        display: block
+        margin: 0
+        max-width: 100%
+        padding: 0 6vw
+        width: 100%
+
+    .et_pb_column
+      float: left
+      padding: 0 2vw
+      width: 47% !important
+
+  .home
+    .infoG
+      .et_pb_row
+        .cycleBox
+          transform: translateX(0)
+          width: 250px
+
+  .infoG
+    .step1,
+    .step2,
+    .step3,
+    .step4,
+    .step5
+      margin: 0 !important
+      margin-bottom: 0
+      margin-top: 0
+      width: 100% !important
+
+    .step1
+      transform: translate(-130%, -50%)
+
+    .step2
+      transform: translate(0, -80%)
+
+    .step3
+      transform: translate(30%, 0%)
+
+    .step4
+      transform: translate(-10%, 80%)
+
+    .step5
+      transform: translate(-130%, 50%)
+
+    .et_pb_column
+      &.et_pb_column_14
+        clear: both
+        margin: 10vh 0 0
+        padding: 0
+        width: 100% !important
+
+      .et_pb_text_15
+        padding: 0
+
+@media only screen and (max-width: 480px)
+  .infoG
+    .step3
+      transform: translate(0%, 0%)
+
+    .et_pb_column
+      &.et-last-child
+        padding: 10% 0 0
+        transform: translateX(0%)
+        width: 100% !important
+
+@media (max-width: 480px)
+  /* =======================
+   CONTACT PAGE
+   =======================
+   . */
+  .page-id-30
+    .et_pb_row_0
+      &.et_pb_row
+        padding: 5vw 7vw 12vw
+        width: 100%

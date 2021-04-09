@@ -15,8 +15,6 @@ require_once('divi-children-engine/divi_children_engine.php');
 
 /***********************************************************************************************/
 
-
-/*- You can include any custom code for your child theme below this line -*/
 /* MODIFY FILE 'WP-LOIGN.PHP'
 */
 
@@ -24,31 +22,100 @@ require_once('divi-children-engine/divi_children_engine.php');
 
 function my_login_logo() { ?>
     <style type="text/css">
+        body::before {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/beautiful_seashore-wallpaper-1280x800.jpg) !important;
+            filter: blur(0) !important
+        }
         #login h1 a, .login h1 a {
             background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/Logo_v1.0.1.png);
-		height:150px;
-		width:150px;
-		background-size: 150px 150px;
-		background-repeat: no-repeat;
-       
+        	  height:150px;
+		        width:150px;
+		        background-size: 150px 150px;
+		        background-repeat: no-repeat;
         }
+        #login h1:after {
+            content: "NiRA";
+            font-family: Garamond, 'Times New Roman', serif;
+            color: rgba(255, 255, 255, 0.7);
+            text-shadow: none;
+            font-size: 34px;
+            line-height: 40px;
+        }
+        #login h1 a,
+        .login h1 a {
+            animation: rotation 120s 0s linear infinite;
+            background-color: rgba(0,0,0,0.2);
+            padding: 10px 10px;
+            background-position: 50%;
+            border-radius: 50%;
+        }
+
+@keyframes rotation {
+    0% {
+        -ms-transform: rotate(0deg)
+    }
+    100% {
+        -ms-transform: rotate(360deg)
+    }
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
     </style>
 <?php }
+
+// To change the link values so the logo links
+
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+function my_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+function my_login_logo_url_title() {
+    return 'Name of the site';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
 
 // END LOGO
 
-// Attach CSS to login Page
+// Attach CSS to wp-login.php
 
 function my_login_stylesheet() {
-    wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/login-index.css' );
-    wp_enqueue_style( 'custom-fonts', get_stylesheet_directory_uri() . '/font-awesome-4.7.0/css/font-awesome.min.css' );
+    // wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/login-index.css' );
+    wp_enqueue_style( 'custom-fonts', 'https://indexwebmedia.com/bostiq/commons/font-awesome-4.7.0/css/font-awesome.min.css' );
+    wp_enqueue_style( 'custom-login-style', 'https://indexwebmedia.com/bostiq/commons/wp-login/login-index.min.css' );
 }
 add_action( 'login_enqueue_scripts', 'my_login_stylesheet' );
 
 
 // END CSS
+
+// Attach html after Form to wp-login.php
+add_action( 'login_footer', 'login_extra_note' );
+
+function login_extra_note() {
+
+//Adding the text
+
+    ?>
+<div id="bottom_html">
+    <p class="txt"> </p>
+</div>
+
+    <?php
+}
 
 // Load the custom stylesheets & conditional scripts
 

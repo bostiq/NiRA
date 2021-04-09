@@ -1,0 +1,134 @@
+// sass-lint:disable no-css-comments
+// sass-lint:disable border-zero
+// sass-lint:disable class-name-format
+// sass-lint:disable no-ids
+// // sass-lint:disable force-element-nesting
+// sass-lint:disable nesting-depth
+
+/*
+ .
+ ================
+ .
+ CONNECTIONS
+ .
+ ===============
+ */
+
+connection
+  border: 3px solid
+  border-radius: 7em
+  color: $m-grey
+  color: $m-50-black
+  z-index: -1
+
+  &.odd
+    border-radius: 100%
+
+  &.first
+    border: 5px dotted
+    color: $black
+
+inner
+  border: 4px solid
+  border-radius: 16px
+  color: $smoke-purple
+
+/*  image DIV posistioning
+
+.cycleBox
+  transform: translateX(20%)
+
+  .hook
+    display: block
+    height: 5px
+    position: absolute
+    width: 5px
+  /* border: 1px solid red */
+
+.cycle
+  transform: rotate(-40deg)
+
+/*   ANCHORS
+
+.hook
+  &.c1
+    left: 20%
+    top: 10%
+
+  &.c2
+    left: 74%
+    top: 8%
+
+  &.c3
+    left: 98%
+    top: 50%
+
+  &.c4
+    left: 58%
+    top: 95%
+
+  &.c5
+    left: 15%
+    top: 85%
+
+/* STEPS BLURBS POSITIONING
+
+.infoG
+  .step1,
+  .step2,
+  .step3,
+  .step4,
+  .step5
+    margin: 0 auto
+    /* centers them */
+    width: 75%
+    /* shrinks text boxes */
+
+
+  .step1
+    transform: translate(-190%, -50%)
+
+  .step2
+    transform: translate(-20%, -80%)
+
+  .step4
+    transform: translate(-10%, 80%)
+
+  .step5
+    transform: translate(-195%, 50%)
+
+@media (max-width: 980px)
+  .infoG
+    .step1
+      transform: translate(-165%, -50%)
+
+    .step2
+      transform: translate(-20%, -80%)
+
+    .step3
+      transform: translate(0, 30%)
+
+    .step4
+      transform: translate(-10%, 80%)
+
+    .step5
+      transform: translate(-165%, 50%)
+
+@media (max-width: 720px)
+  .infoG
+    .step1
+      transform: translate(-190%, -50%)
+
+    .step2
+      transform: translate(-20%, -80%)
+
+    .step3
+      transform: translate(20%, 0%)
+
+    .step4
+      transform: translate(-10%, 80%)
+
+    .step5
+      transform: translate(-190%, 50%)
+/*   END CONNECTIONS
+ ===================
